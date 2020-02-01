@@ -683,23 +683,71 @@ function setParamObj(cdm)
 		console.log('-------', maxX, maxY, maxZ);			
 	}
 	
-	var z = maxZ;
 	
-	while(maxZ > minZ) 
+	
+	if(1==1)
 	{
-		console.log('-maxZ ', maxZ);
+		var geometry = new THREE.Geometry().fromBufferGeometry( obj.geometry.clone() );
+		geometry.computeFaceNormals();
+		geometry.computeVertexNormals();
+		var objX = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.1 }));
+		//obj.rotation.z = Math.PI / 10;
+		objX.position.set(3, 2, obj.position.z);
+		objX.rotation.copy(obj.rotation);
+		scene.add(objX);
+
+		objX.updateMatrixWorld();
+		plane2.position.z = maxZ;
 		
-		maxZ -= 0.001;
-	}
+		var pMin = [];
+		var pMax = [];
+		
+		while(maxZ > minZ) 
+		{
+			var pp = drawIntersectionPoints({obj: objX, plane: plane2});
+			
+			var minX_2 = {val: 999999, num: 0};
+			var maxX_2 = {val: -999999, num: 0};	
+			
+			for ( var i = 0; i < pp.length; i++ )
+			{
+				if(pp[i].x < minX_2.val) { minX_2.val = pp[i].x; minX_2.num = i; }
+				if(pp[i].x > maxX_2.val) { maxX_2.val = pp[i].x; maxX_2.num = i; }
+			}			
+			
+			pMin[pMin.length] = pp[minX_2.num];
+			pMax[pMax.length] = pp[maxX_2.num];
+			
+			maxZ -= 0.01;
+			plane2.position.z = maxZ;
+		}
+		
+		var point_room = [];
+		
+		for ( var i = 0; i < pMax.length; i++ )
+		{
+			point_room[point_room.length] = pMax[i];
+		}
+		
+		for ( var i = pMin.length - 1; i >= 0; i-- )
+		{
+			point_room[point_room.length] = pMin[i];
+		}		
+		
+		console.log(point_room);
+	}		
 	
 	// Shape
-	if(1==2)
+	if(1==1)
 	{
-		var point_room = [];
-		point_room[0] = new THREE.Vector2( -1, 1 );	
-		point_room[1] = new THREE.Vector2( 1, 1 );	
-		point_room[2] = new THREE.Vector2( 1, -1 );	
-		point_room[3] = new THREE.Vector2( -1, -1 );
+		if(1==2)
+		{
+			var point_room = [];
+			point_room[0] = new THREE.Vector2( -1, 1 );	
+			point_room[1] = new THREE.Vector2( 1, 1 );	
+			point_room[2] = new THREE.Vector2( 1, -1 );	
+			point_room[3] = new THREE.Vector2( -1, -1 );			
+		}
 		
 		console.log('-------------');	 
 		
@@ -708,7 +756,9 @@ function setParamObj(cdm)
 
 		var material = new THREE.MeshPhongMaterial( { color : 0xe3e3e5 } );
 		
-		var floor = new THREE.Mesh( new THREE.ExtrudeGeometry( shape, { bevelEnabled: false, depth: 1 } ), material );	
+		var geometry = new THREE.ExtrudeGeometry( shape, { bevelEnabled: false, depth: 0.3 } );
+		geometry.rotateX(-Math.PI / 2);
+		var floor = new THREE.Mesh( geometry, material );	
 		scene.add(floor);
 		
 		floor.position.x = -2;

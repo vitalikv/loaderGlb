@@ -1724,11 +1724,13 @@ function drawIntersectionPoints(cdm)
 	var obj = cdm.obj;
 	var plane = cdm.plane;
 	
-	obj.updateMatrixWorld();
+	
 	plane.updateMatrixWorld();
 	
+	var arrP = [];
 	var pointsOfIntersection = new THREE.Geometry();
 	var pointOfIntersection = new THREE.Vector3();	
+	
 	
 	var a = new THREE.Vector3();
 	var b = new THREE.Vector3();
@@ -1764,17 +1766,27 @@ function drawIntersectionPoints(cdm)
 	function setPointOfIntersection(line, plane) 
 	{
 		pointOfIntersection = plane.intersectLine(line, new THREE.Vector3());
-		if (pointOfIntersection) { pointsOfIntersection.vertices.push(pointOfIntersection.clone()); };
+		if (pointOfIntersection) 
+		{ 
+			pointsOfIntersection.vertices.push(pointOfIntersection.clone());
+			arrP[arrP.length] = new THREE.Vector2(pointOfIntersection.x, pointOfIntersection.z);
+		};
 	}
 	
+	
+	// отображаем точки пересечения и контур
+	if(1==1)
+	{
+		var pointsMaterial = new THREE.PointsMaterial({ size: .1, color: "yellow" });
+		var points = new THREE.Points(pointsOfIntersection, pointsMaterial);
+		scene.add(points);
 
-	var pointsMaterial = new THREE.PointsMaterial({ size: .1, color: "yellow" });
-	var points = new THREE.Points(pointsOfIntersection, pointsMaterial);
-	scene.add(points);
-
-	var lineMaterial = new THREE.LineBasicMaterial( { color: 0xffff00 } );
-	var line = new THREE.LineSegments( pointsOfIntersection, lineMaterial );
-	scene.add( line ); 
+		var lineMaterial = new THREE.LineBasicMaterial( { color: 0xffff00 } );
+		var line = new THREE.LineSegments( pointsOfIntersection, lineMaterial );
+		scene.add( line ); 		
+	}
+	
+	return arrP;
 }
 
 
@@ -1783,21 +1795,6 @@ var planeGeom = new THREE.PlaneGeometry(10, 10);
 var plane2 = new THREE.Mesh(planeGeom, new THREE.MeshBasicMaterial({ color: "pink", transparent: true, opacity: 0.5, side: THREE.DoubleSide }));
 plane2.position.y = 4;
 scene.add(plane2);
-
-var objGeom = new THREE.BoxBufferGeometry( 1, 1, 2 );
-var objGeom = new THREE.Geometry().fromBufferGeometry( objGeom );
-objGeom.computeFaceNormals();
-objGeom.computeVertexNormals();
-var objX = new THREE.Mesh(objGeom, new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.1 }));
-//obj.rotation.z = Math.PI / 10;
-objX.position.set(0, 2, 0);
-scene.add(objX);
-
-	
-drawIntersectionPoints({obj: objX, plane: plane2});
-plane2.position.z = -0.5;
-
-drawIntersectionPoints({obj: objX, plane: plane2});
 	
 	
 	
@@ -1823,31 +1820,13 @@ $(document).ready(function ()
 	if(1==1)	// gltf/glb
 	{
 		var loader = new THREE.GLTFLoader();
-		loader.load( 'import/vm_furn_BOX.glb', function ( obj ) 						
+		loader.load( 'import/80105983_krovat_dafna9.glb', function ( obj ) 						
 		{ 
 			//console.log(obj);
-			var obj = obj.scene.children[0].children[0];
+			//var obj = obj.scene.children[0];
+			var obj = obj.scene;
 			
-			scene.add( obj );
-			
-			console.log(obj);
-			
-			var geometry = new THREE.Geometry().fromBufferGeometry( obj.geometry.clone() );
-			geometry.computeFaceNormals();
-			geometry.computeVertexNormals();
-			var objX = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.1 }));
-			//obj.rotation.z = Math.PI / 10;
-			objX.position.set(3, 2, 0);
-			objX.rotation.copy(obj.rotation);
-			scene.add(objX);
-
-			plane2.position.z = 0;
-			drawIntersectionPoints({obj: objX, plane: plane2});
-			plane2.position.z = 0.5;
-
-			drawIntersectionPoints({obj: objX, plane: plane2});			
-			
-			//setParamObj({obj: obj});
+			setParamObj({obj: obj});
 		});			
 	}	
 	
