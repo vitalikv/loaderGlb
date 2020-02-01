@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="upload.js"></script>
+    </head>
+    <body>
+        <img id="preview"/>
+        <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php">
+            <div>
+                <div><label for="meta_title">название</label></div>
+                <div><input type="text" name="meta_title" id="meta_title"/></div>
+                <div><label for="meta_type">тип</label></div>
+                <div><select name="meta_type" id="meta_type"><option>---</option></select></div>
+                <div><label for="meta_height">высота</label></div>
+                <div><input type="text" name="meta_height" id="meta_height"/></div>
+                <div><label for="meta_length">длина</label></div>
+                <div><input type="text" name="meta_length" id="meta_length"/></div>
+                <div><label for="meta_width">ширина</label></div>
+                <div><input type="text" name="meta_width" id="meta_width"/></div>
+                <div><label for="meta_price">цена</label></div>
+                <div><input type="text" name="meta_price" id="meta_price"/></div>
+                <div><label for="meta_priority">приоритет</label></div>
+                <div><input type="text" name="meta_priority" id="meta_priority" value="2.0"/></div>
+                <div><label for="meta_itemcode">артикул</label></div>
+                <div><input type="text" name="meta_itemcode" id="meta_itemcode"/></div>
+                <div><label for="meta_vendor">поставщик</label></div>
+                <div><select name="meta_vendor" id="meta_vendor"><option>---</option></select></div>
+                <div><label for="meta_style">стиль</label></div>
+                <div><select name="meta_style" id="meta_style"><option>---</option></select></div>
+                <div><label for="meta_facing">отделка</label></div>
+                <div><select name="meta_facing" id="meta_facing"/><option>---</option></select></div>
+                <div><label for="meta_seats">функц. мест (если определены)</label></div>
+                <div><input type="text" name="meta_seats" id="meta_seats"/></div>
+                <div><label for="model_file">модель gltf</label></div>
+                <div><input type="file" name="model_file" id="model_file" onchange="fileSelected();"/></div>
+            </div>
+            <div>
+                <input type="button" value="Upload" onclick="startUploading()"/>
+            </div>
+            <div id="fileinfo">
+                <div id="filename"></div>
+                <div id="filesize"></div>
+                <div id="filetype"></div>
+                <div id="filedim"></div>
+            </div>
+            <div id="error">An error occurred while uploading the file</div>
+            <div id="abort">The upload has been canceled by the user or the browser dropped the connection</div>
+            <div id="warnsize">file too big</div>
+
+            <div id="progress_outer">
+                <div id="progress"></div>
+            </div>
+            <div id="progress_info">
+                <div id="progress_percent">&nbsp;</div>
+                <div id="speed">&nbsp;</div>
+                <div id="remaining">&nbsp;</div>
+                <div id="b_transfered">&nbsp;</div>
+                <div style="clear:both"></div>
+                <div id="upload_response"></div>
+                <div id="post_response"></div>
+            </div>
+        </form>
+    </body>
+</html>
