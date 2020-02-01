@@ -1,0 +1,2090 @@
+{
+  "middle_openings": [],
+  "middle_wall": [
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 59,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 60,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 59,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 60,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 23
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 60,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 61,
+          "y": 116
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 60,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 61,
+          "y": 116
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 61,
+          "y": 116
+        },
+        "point_2": {
+          "type": "point",
+          "x": 454,
+          "y": 116
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 61,
+          "y": 116
+        },
+        "point_2": {
+          "type": "point",
+          "x": 454,
+          "y": 116
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 454,
+          "y": 116
+        },
+        "point_2": {
+          "type": "point",
+          "x": 455,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 454,
+          "y": 116
+        },
+        "point_2": {
+          "type": "point",
+          "x": 455,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 455,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 456,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 455,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 456,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 456,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 457,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 456,
+          "y": 117
+        },
+        "point_2": {
+          "type": "point",
+          "x": 457,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 457,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 458,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 457,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 458,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 458,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 458,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 21
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 120
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 120
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 20
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 120
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 121
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 120
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 121
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 121
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 122
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 121
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 122
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 122
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 123
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 122
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 123
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 16
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 123
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 124
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 123
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 124
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 124
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 125
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 124
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 125
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 125
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 126
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 125
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 126
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 126
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 127
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 126
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 127
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 127
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 257
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 127
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 257
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 257
+        },
+        "point_2": {
+          "type": "point",
+          "x": 464,
+          "y": 258
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 257
+        },
+        "point_2": {
+          "type": "point",
+          "x": 464,
+          "y": 258
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 464,
+          "y": 258
+        },
+        "point_2": {
+          "type": "point",
+          "x": 464,
+          "y": 390
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 464,
+          "y": 258
+        },
+        "point_2": {
+          "type": "point",
+          "x": 464,
+          "y": 390
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 464,
+          "y": 390
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 391
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 464,
+          "y": 390
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 391
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 391
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 392
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 391
+        },
+        "point_2": {
+          "type": "point",
+          "x": 463,
+          "y": 392
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 392
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 393
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 463,
+          "y": 392
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 393
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 393
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 394
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 393
+        },
+        "point_2": {
+          "type": "point",
+          "x": 462,
+          "y": 394
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 394
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 395
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 462,
+          "y": 394
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 395
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 395
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 396
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 395
+        },
+        "point_2": {
+          "type": "point",
+          "x": 461,
+          "y": 396
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 396
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 461,
+          "y": 396
+        },
+        "point_2": {
+          "type": "point",
+          "x": 460,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 460,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 459,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 458,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 459,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 458,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 458,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 457,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 458,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 457,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 457,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 456,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 457,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 456,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 456,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 455,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 456,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 455,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 455,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 454,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 455,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 454,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 454,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 258,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 454,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 258,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 258,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 257,
+          "y": 401
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 258,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 257,
+          "y": 401
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 17
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 257,
+          "y": 401
+        },
+        "point_2": {
+          "type": "point",
+          "x": 62,
+          "y": 401
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 257,
+          "y": 401
+        },
+        "point_2": {
+          "type": "point",
+          "x": 62,
+          "y": 401
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 62,
+          "y": 401
+        },
+        "point_2": {
+          "type": "point",
+          "x": 61,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 62,
+          "y": 401
+        },
+        "point_2": {
+          "type": "point",
+          "x": 61,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 61,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 60,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 61,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 60,
+          "y": 400
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 19
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 60,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 59,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 60,
+          "y": 400
+        },
+        "point_2": {
+          "type": "point",
+          "x": 59,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 19
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 59,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 58,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 59,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 58,
+          "y": 399
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 19
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 58,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 57,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 58,
+          "y": 399
+        },
+        "point_2": {
+          "type": "point",
+          "x": 57,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 57,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 56,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 57,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 56,
+          "y": 398
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 18
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 56,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 55,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 56,
+          "y": 398
+        },
+        "point_2": {
+          "type": "point",
+          "x": 55,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 19
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 55,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 54,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 55,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 54,
+          "y": 397
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 21
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 54,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 396
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 54,
+          "y": 397
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 396
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 396
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 395
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 396
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 395
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 395
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 394
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 395
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 394
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 394
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 393
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 394
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 393
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 23
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 393
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 392
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 393
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 392
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 392
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 260
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 392
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 260
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 260
+        },
+        "point_2": {
+          "type": "point",
+          "x": 50,
+          "y": 259
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 260
+        },
+        "point_2": {
+          "type": "point",
+          "x": 50,
+          "y": 259
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 21
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 50,
+          "y": 259
+        },
+        "point_2": {
+          "type": "point",
+          "x": 50,
+          "y": 127
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 50,
+          "y": 259
+        },
+        "point_2": {
+          "type": "point",
+          "x": 50,
+          "y": 127
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 21
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 50,
+          "y": 127
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 126
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 50,
+          "y": 127
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 126
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 126
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 125
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 126
+        },
+        "point_2": {
+          "type": "point",
+          "x": 51,
+          "y": 125
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 23
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 125
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 124
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 51,
+          "y": 125
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 124
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 124
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 123
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 124
+        },
+        "point_2": {
+          "type": "point",
+          "x": 52,
+          "y": 123
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 123
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 122
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 52,
+          "y": 123
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 122
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 122
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 121
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 122
+        },
+        "point_2": {
+          "type": "point",
+          "x": 53,
+          "y": 121
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 121
+        },
+        "point_2": {
+          "type": "point",
+          "x": 55,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 53,
+          "y": 121
+        },
+        "point_2": {
+          "type": "point",
+          "x": 55,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 55,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 56,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 55,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 56,
+          "y": 119
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 56,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 57,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 56,
+          "y": 119
+        },
+        "point_2": {
+          "type": "point",
+          "x": 57,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 57,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 58,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 57,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 58,
+          "y": 118
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    },
+    {
+      "inner_part": {
+        "point_1": {
+          "type": "point",
+          "x": 58,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 59,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "outer_part": {
+        "point_1": {
+          "type": "point",
+          "x": 58,
+          "y": 118
+        },
+        "point_2": {
+          "type": "point",
+          "x": 59,
+          "y": 117
+        },
+        "type": "line"
+      },
+      "type": "wall",
+      "wall_type": "wall",
+      "width": 22
+    }
+  ],
+  "rooms": [
+    {
+      "openings": [],
+      "type": null,
+      "walls": [
+        {
+          "inner_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "outer_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "type": "wall",
+          "wall_type": "wall",
+          "width": 0
+        },
+        {
+          "inner_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "point_2": {
+              "type": "point",
+              "x": 62,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "outer_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "point_2": {
+              "type": "point",
+              "x": 62,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "type": "wall",
+          "wall_type": "wall",
+          "width": 0
+        },
+        {
+          "inner_part": {
+            "point_1": {
+              "type": "point",
+              "x": 62,
+              "y": 128
+            },
+            "point_2": {
+              "type": "point",
+              "x": 63,
+              "y": 391
+            },
+            "type": "line"
+          },
+          "outer_part": {
+            "point_1": {
+              "type": "point",
+              "x": 62,
+              "y": 128
+            },
+            "point_2": {
+              "type": "point",
+              "x": 63,
+              "y": 391
+            },
+            "type": "line"
+          },
+          "type": "wall",
+          "wall_type": "wall",
+          "width": 0
+        },
+        {
+          "inner_part": {
+            "point_1": {
+              "type": "point",
+              "x": 63,
+              "y": 391
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "type": "line"
+          },
+          "outer_part": {
+            "point_1": {
+              "type": "point",
+              "x": 63,
+              "y": 391
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "type": "line"
+          },
+          "type": "wall",
+          "wall_type": "wall",
+          "width": 0
+        },
+        {
+          "inner_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "outer_part": {
+            "point_1": {
+              "type": "point",
+              "x": 454,
+              "y": 390
+            },
+            "point_2": {
+              "type": "point",
+              "x": 454,
+              "y": 128
+            },
+            "type": "line"
+          },
+          "type": "wall",
+          "wall_type": "wall",
+          "width": 0
+        }
+      ]
+    }
+  ]
+}
