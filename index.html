@@ -3,10 +3,124 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link href="main.css" rel="stylesheet" type="text/css"/>
+		<link href="gl/css/style.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="upload.js"></script>
+		
+		<script src="gl/js/three.min.js"></script>
+		<script src="gl/js/jquery.js"></script>
+		<script src="gl/js/ThreeCSG.js"></script>         
+		
+		<script src="gl/js/dp/EffectComposer.js"></script>
+		<script src="gl/js/dp/CopyShader.js"></script>
+		<script src="gl/js/dp/RenderPass.js"></script>
+		<script src="gl/js/dp/ShaderPass.js"></script>
+		<script src="gl/js/dp/OutlinePass.js"></script>
+		<script src="gl/js/dp/FXAAShader.js"></script>
+		<script src="gl/js/dp/SAOPass.js"></script>
+		<script src="gl/js/dp/SAOShader.js"></script>
+		<script src="gl/js/dp/DepthLimitedBlurShader.js"></script>
+		<script src="gl/js/dp/UnpackDepthRGBAShader.js"></script>	
+		
+		<script src="gl/js/loader/inflate.min.js"></script>
+		<script src="gl/js/loader/FBXLoader.js"></script>
+		<script src="gl/js/loader/STLExporter.js"></script>
+		<script src="gl/js/loader/GLTFLoader.js"></script>
+		<script src="gl/js/BufferGeometryUtils.js"></script>
+		<script src="gl/js/export/GLTFExporter.js"></script>	
+
+		<script>
+			var vr = "=16";
+			
+			var infProject = JSON.parse('{"url":"\/","title":"Test","nameId":"","path":"gl/","load":{"img":[]},"activeInput":"","activeInput_2":null,"activeDiv":null,"user":{"id":null,"mail":null,"pass":null},"settings":{"project":"test","shader":{"fxaaPass":false},"light":{"type":"global"},"height":3.2,"floor":{"o":true,"posY":0,"height":0.01,"changeY":false,"areaPoint":"inside","material":null,"label":false,"color":16249557},"wall":{"width":0.3,"label":"double","dist":"center","material":null,"block":null,"color":{"top":4473924,"front":11379078}},"land":{"o":false},"unit":{"wall":1,"floor":1},"camera":{"type":"2d","zoom":1,"limitZoom":1},"grid":{"count":null,"size":1,"pos":{"y":-0},"color":13421772},"interface":{"button":{"showHideWall_1":{"active":"\u0421\u043f\u0440\u044f\u0442\u0430\u0442\u044c \u0441\u0442\u0435\u043d\u044b"}}}},"scene":{"tool":[],"load":""}}');
+
+			console.log('type '+ vr);		
+		</script>
+	
     </head>
     <body>
-        <img id="preview"/>
+	
+        <div id="canvasFrame"/>
+			<div class="frame">					
+				<div class="flex_1 height100">
+					
+					<div style="">
+						<div class="flex_1 top_panel_2">	
+							
+							<div class="toolbar" data-action ='top_panel_1'>
+								<div class="button1-wrap-1" nameId='butt_main_load_obj'>
+									<div class="button1 button_gradient_1"> 
+										<img src="gl/img/download_1.png">
+									</div>	
+								</div>		
+								<div class="button1-wrap-1" nameId='butt_main_sett'>
+									<div class="button1 button_gradient_1"> 
+										<img src="gl/img/settings_1.png">
+									</div>	
+								</div>			
+							</div> 
+							
+							<div class="tp_right_1">
+							
+								<select nameId="camera_button" class="select-css">
+									<option value ="2D">камера 2D</option>
+									<option value ="3D">камера 3D</option>
+								</select>	
+								
+							</div>
+							
+						</div>
+
+
+
+
+						<div class="window_main_sett" nameId="window_main_sett" ui_1="" style="display: none;">
+							<div class="modal_window_close" nameId="button_close_main_sett">
+								+
+							</div>
+							<div class='modal_body'>
+								<div style="font-size: 16px; font-family: arial,sans-serif; color: #666; margin: 30px;">
+									<div>
+										<input type="checkbox" nameId="checkbox_light_global" checked> Глобальный свет
+									</div>	
+									<div>
+										<input type="checkbox" nameId="checkbox_fxaaPass"> Сглаживание 
+									</div>
+								</div>			
+							</div>
+						</div>	
+
+
+
+						<div class="window_main_load_obj" nameId="window_main_load_obj" ui_1="" style="display: none;">
+							<div class="modal_window_close" nameId="button_close_main_load_obj">
+								+
+							</div>
+							<div style="width: 80%; height: 160px; margin: auto; padding-top: 30px;">
+
+								<input name="file" type="file" id="load_obj_1" class="input_load_substrate">
+								<label for="load_obj_1" class="button1 button_gradient_1" style="margin: auto;">
+									загрузить с вашего компьютера
+								</label>
+
+								<div style="font-size: 20px; font-family: arial,sans-serif; color: #666; margin: 10px auto; text-align:center;">
+									или
+								</div>
+								
+								<div class="flex_1">		
+									<input type="text" nameId="input_link_obj_1" value="">			
+								</div>
+								
+								<div class="button1 button_gradient_1" nameId='butt_load_obj_2'>загрузить по ссылке</div>
+							</div>			
+						</div>										 							
+					</div>
+				</div>	
+			</div>		
+		
+		</div>
+		
+		<script src="test.js"></script>
+		
         <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php">
             <div>
                 <div><label for="meta_title">название</label></div>

@@ -5,10 +5,6 @@
 <div class="flex_1 top_panel_2">	
 	
 	<div class="toolbar" data-action ='top_panel_1'>
-		<div class="button1 button_gradient_1" nameId='showHideWall_1' style="display: none;"> 
-			Спрятать стены
-		</div>	
-		
 		<div class="button1-wrap-1" nameId='butt_main_load_obj'>
 			<div class="button1 button_gradient_1"> 
 				<img src="img/download_1.png">
@@ -18,10 +14,7 @@
 			<div class="button1 button_gradient_1"> 
 				<img src="img/settings_1.png">
 			</div>	
-		</div>
-		<div class="button1-wrap-1">
-			<div class="button1 button_gradient_1" nameId='butt_main_menu'>Меню</div>
-		</div>				
+		</div>			
 	</div> 
 	
 	<div class="tp_right_1">

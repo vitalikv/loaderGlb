@@ -516,11 +516,16 @@ function loadUrlFile()
 }
 
 
+var contourPoint = [];
+var modelGlb = null;
 
 function setParamObj(cdm)
 {
 	$('[nameId="window_main_load_obj"]').css({"display":"none"});
 	resetScene();
+	
+	contourPoint = [];
+	modelGlb = null;
 	
 	var obj = cdm.obj;
 	
@@ -564,7 +569,7 @@ function setParamObj(cdm)
 	
 
 	
-	if(1==2)
+	if(1==1)
 	{
 		var options = 
 		{
@@ -590,16 +595,20 @@ function setParamObj(cdm)
 			if ( gltf instanceof ArrayBuffer ) 
 			{ 
 				console.log( gltf ); 
-				link.href = URL.createObjectURL( new Blob( [ gltf ], { type: 'application/octet-stream' } ) );
-				link.download = 'file.glb';				
+				//link.href = URL.createObjectURL( new Blob( [ gltf ], { type: 'application/octet-stream' } ) );
+				//link.download = 'file.glb';	
+
+				modelGlb = gltf;
 			}
 			else
 			{
 				console.log( gltf );
 				var gltf = JSON.stringify( gltf, null, 2 );
 				
-				link.href = URL.createObjectURL( new Blob( [ gltf ], { type: 'text/plain' } ) );
-				link.download = 'file.gltf';				
+				//link.href = URL.createObjectURL( new Blob( [ gltf ], { type: 'text/plain' } ) );
+				//link.download = 'file.gltf';
+
+				modelGlb = gltf;
 			}
 
 			link.click();			
@@ -691,10 +700,13 @@ function setParamObj(cdm)
 		geometry.computeFaceNormals();
 		geometry.computeVertexNormals();
 		var objX = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.1 }));
-		//obj.rotation.z = Math.PI / 10;
-		objX.position.set(3, 2, obj.position.z);
+		objX.material.visible = false;
+		
+		objX.position.copy(obj.position);
 		objX.rotation.copy(obj.rotation);
 		scene.add(objX);
+		
+		infProject.scene.array.obj[infProject.scene.array.obj.length] = objX;
 
 		objX.updateMatrixWorld();
 		plane2.position.z = maxZ;
@@ -734,7 +746,9 @@ function setParamObj(cdm)
 			point_room[point_room.length] = pMin[i];
 		}		
 		
-		console.log(point_room);
+		contourPoint = point_room;
+		
+		console.log(contourPoint);
 	}		
 	
 	// Shape
@@ -756,19 +770,20 @@ function setParamObj(cdm)
 
 		var material = new THREE.MeshPhongMaterial( { color : 0xe3e3e5 } );
 		
-		var geometry = new THREE.ExtrudeGeometry( shape, { bevelEnabled: false, depth: 0.3 } );
+		var geometry = new THREE.ExtrudeGeometry( shape, { bevelEnabled: false, depth: 0.1 } );
 		geometry.rotateX(-Math.PI / 2);
 		var floor = new THREE.Mesh( geometry, material );	
 		scene.add(floor);
 		
-		floor.position.x = -2;
+		floor.position.x = -3;
+		floor.position.y = 2;
 		
 		floor.geometry = new THREE.BufferGeometry().fromGeometry(floor.geometry);
 		console.log(floor.geometry);
+		
+		infProject.scene.array.obj[infProject.scene.array.obj.length] = floor;
 	}
 	
-					
-	updateListTubeUI_1({o: obj, type: 'add'});	// добавляем объект в UI список материалов 
 	
 	//clickO.move = obj;
 

@@ -4,7 +4,7 @@
 
 
 
-<div class="right_panel_1" data-action ='right_panel_1' ui_1="" style="z-index: 1;">
+<div class="right_panel_1" data-action ='right_panel_1' ui_1="" style="z-index: 1; display: none;">
 
 
 	<div class="flex_column_1 right_panel_1_1" nameId="panel_catalog_1">

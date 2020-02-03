@@ -1,9 +1,16 @@
-
+#canvasFrame
+{
+	position: fixed;
+	width: 50%;
+	height: 550px;
+	top: 0;
+	right: 0;	
+}
 
 canvas 
 {
+	position: absolute;
 	background: #ffffff;
-	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -11,10 +18,9 @@ canvas
 	z-index: 0;
 }
 
-
 .frame 
 {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;

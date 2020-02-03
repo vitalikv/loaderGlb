@@ -1,15 +1,18 @@
 
 
 
-var w_w = window.innerWidth;
-var w_h = window.innerHeight;
-var aspect = window.innerWidth/window.innerHeight;
-var d = 5;
 
+
+var container = document.getElementById( 'canvasFrame' );
 var canvas = document.createElement( 'canvas' );
 var context = canvas.getContext( 'webgl2' );
 var renderer = new THREE.WebGLRenderer( { canvas: canvas, context: context, preserveDrawingBuffer: true, } );
 
+console.log( container );
+var w_w = container.clientWidth;
+var w_h = container.clientHeight;
+var aspect = container.clientWidth/container.clientHeight;
+var d = 5;
 
 //renderer.gammaInput = true;
 //renderer.gammaOutput = true;
@@ -18,10 +21,10 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 //renderer.autoClear = false;
 renderer.setPixelRatio( window.devicePixelRatio );
-renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setSize( w_w, w_h );
 //renderer.setClearColor (0xffffff, 1);
 //renderer.setClearColor (0x9c9c9c, 1);
-document.body.appendChild( renderer.domElement );
+container.appendChild( renderer.domElement );
 
 var scene = new THREE.Scene();
 scene.background = new THREE.Color( 0xdefbff );
@@ -37,7 +40,7 @@ cameraTop.updateProjectionMatrix();
 
 
 //----------- camera3D
-var camera3D = new THREE.PerspectiveCamera( 65, window.innerWidth / window.innerHeight, 0.01, 1000 );  
+var camera3D = new THREE.PerspectiveCamera( 65, w_w / w_h, 0.01, 1000 );  
 camera3D.rotation.order = 'YZX';		//'ZYX'
 camera3D.position.set(5, 7, 5);
 camera3D.lookAt(scene.position);
@@ -90,7 +93,9 @@ function renderCamera()
 window.addEventListener( 'resize', onWindowResize, false );
 function onWindowResize() 
 { 
-	var aspect = window.innerWidth / window.innerHeight;
+	var w_w = container.clientWidth;
+	var w_h = container.clientHeight;
+	var aspect = w_w / w_h;
 	var d = 5;
 	
 	cameraTop.left = -d * aspect;
@@ -109,7 +114,7 @@ function onWindowResize()
 	cameraWall.bottom = -d;
 	cameraWall.updateProjectionMatrix();
 	
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(w_w, w_h);
 	
 	renderCamera();
 }
@@ -122,8 +127,8 @@ function onWindowResize()
 //----------- start
 
 
-var resolutionD_w = window.screen.availWidth;
-var resolutionD_h = window.screen.availHeight;
+var resolutionD_w = container.clientWidth;
+var resolutionD_h = container.clientHeight;
 
 var kof_rd = 1;
 
@@ -213,9 +218,9 @@ var offset = new THREE.Vector3();
 {
 	var composer = new THREE.EffectComposer( renderer );
 	var renderPass = new THREE.RenderPass( scene, cameraTop );
-	var outlinePass = new THREE.OutlinePass( new THREE.Vector2( window.innerWidth, window.innerHeight ), scene, cameraTop );	
+	var outlinePass = new THREE.OutlinePass( new THREE.Vector2( w_w, w_h ), scene, cameraTop );	
 	
-	composer.setSize( window.innerWidth, window.innerHeight );
+	composer.setSize( w_w, w_h );
 	composer.addPass( renderPass );
 	composer.addPass( outlinePass );
 
@@ -241,8 +246,8 @@ var offset = new THREE.Vector3();
 	if(infProject.settings.shader.fxaaPass !== undefined)
 	{
 		var fxaaPass = new THREE.ShaderPass( THREE.FXAAShader );	
-		fxaaPass.material.uniforms[ 'resolution' ].value.x = 1 / ( window.innerWidth * window.devicePixelRatio );
-		fxaaPass.material.uniforms[ 'resolution' ].value.y = 1 / ( window.innerHeight * window.devicePixelRatio );	
+		fxaaPass.material.uniforms[ 'resolution' ].value.x = 1 / ( w_w * window.devicePixelRatio );
+		fxaaPass.material.uniforms[ 'resolution' ].value.y = 1 / ( w_h * window.devicePixelRatio );	
 		fxaaPass.enabled = false;
 		
 		composer.addPass( fxaaPass ); 	
@@ -1081,13 +1086,13 @@ function crtW( cdm )
 
 function rayIntersect( event, obj, t ) 
 {
-	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+	mouse.x = ( ( event.clientX - container.offsetLeft ) / container.clientWidth ) * 2 - 1;
+	mouse.y = - ( ( event.clientY - container.offsetTop ) / container.clientHeight ) * 2 + 1;
 	raycaster.setFromCamera( mouse, camera );
 	
 	var intersects = null;
 	if(t == 'one'){ intersects = raycaster.intersectObject( obj ); } 
-	else if(t == 'arr'){ intersects = raycaster.intersectObjects( obj,true ); }
+	else if(t == 'arr'){ intersects = raycaster.intersectObjects( obj ); }
 	
 	return intersects;
 }
@@ -1775,7 +1780,7 @@ function drawIntersectionPoints(cdm)
 	
 	
 	// отображаем точки пересечения и контур
-	if(1==1)
+	if(1==2)
 	{
 		var pointsMaterial = new THREE.PointsMaterial({ size: .1, color: "yellow" });
 		var points = new THREE.Points(pointsOfIntersection, pointsMaterial);
@@ -1790,9 +1795,11 @@ function drawIntersectionPoints(cdm)
 }
 
 
-var planeGeom = new THREE.PlaneGeometry(10, 10);
+var planeGeom = new THREE.PlaneGeometry(100, 100);
 //planeGeom.rotateX(-Math.PI / 2);
-var plane2 = new THREE.Mesh(planeGeom, new THREE.MeshBasicMaterial({ color: "pink", transparent: true, opacity: 0.5, side: THREE.DoubleSide }));
+var material = new THREE.MeshBasicMaterial({ color: "pink", transparent: true, opacity: 0.5, side: THREE.DoubleSide });
+material.visible = false;
+var plane2 = new THREE.Mesh(planeGeom, material);
 plane2.position.y = 4;
 scene.add(plane2);
 	
@@ -1820,7 +1827,7 @@ $(document).ready(function ()
 	if(1==1)	// gltf/glb
 	{
 		var loader = new THREE.GLTFLoader();
-		loader.load( 'import/80105983_krovat_dafna9.glb', function ( obj ) 						
+		loader.load( infProject.path+'import/80105983_krovat_dafna9.glb', function ( obj ) 						
 		{ 
 			//console.log(obj);
 			//var obj = obj.scene.children[0];
