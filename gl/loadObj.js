@@ -518,6 +518,7 @@ function loadUrlFile()
 
 var contourPoint = [];
 var modelGlb = null;
+var modelGlbJson = null;
 
 function setParamObj(cdm)
 {
@@ -598,7 +599,7 @@ function setParamObj(cdm)
 				//link.href = URL.createObjectURL( new Blob( [ gltf ], { type: 'application/octet-stream' } ) );
 				//link.download = 'file.glb';	
 
-				modelGlb = gltf;
+				modelGlb = new Blob( [ gltf ], { type: 'application/octet-stream' } );
 			}
 			else
 			{
@@ -752,7 +753,7 @@ function setParamObj(cdm)
 	}		
 	
 	// Shape
-	if(1==1)
+	if(1==2)
 	{
 		if(1==2)
 		{

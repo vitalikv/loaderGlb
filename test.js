@@ -8270,7 +8270,7 @@ var renderer = new THREE.WebGLRenderer( { canvas: canvas, context: context, pres
 var w_w = container.clientWidth;
 var w_h = container.clientHeight;
 var aspect = container.clientWidth/container.clientHeight;
-var d = 5;
+var d = 2;
 
 
 
@@ -8542,7 +8542,7 @@ var offset = new THREE.Vector3();
 {
 	fname_s_0201();
 	fname_s_0300({ pos: {y: 0.01} }); 	
-	fname_s_070({radious: 15, theta: 90, phi: 35});		
+	fname_s_070({radious: 10, theta: 90, phi: 35});		
 	fname_s_0276();			
 	fname_s_0277();		
 	fname_s_0278();
@@ -10082,7 +10082,7 @@ $(document).ready(function ()
 	
 	
 	
-	if(1==1)	
+	if(1==2)	
 	{
 		var loader = new THREE.GLTFLoader();
 		loader.load( infProject.path+'import/80105983_krovat_dafna9.glb', function ( obj ) 						
@@ -11973,6 +11973,7 @@ function fname_s_0274()
 
 var contourPoint = [];
 var modelGlb = null;
+var modelGlbJson = null;
 
 function fname_s_0275(cdm)
 {
@@ -12049,7 +12050,7 @@ function fname_s_0275(cdm)
 			{ 
 				 
 								
-				modelGlb = gltf;
+				modelGlb = new Blob( [ gltf ], { type: 'application/octet-stream' } );
 			}
 			else
 			{
@@ -12195,7 +12196,7 @@ function fname_s_0275(cdm)
 		
 	}		
 	
-		if(1==1)
+		if(1==2)
 	{
 		if(1==2)
 		{

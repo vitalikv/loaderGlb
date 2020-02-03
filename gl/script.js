@@ -12,7 +12,7 @@ console.log( container );
 var w_w = container.clientWidth;
 var w_h = container.clientHeight;
 var aspect = container.clientWidth/container.clientHeight;
-var d = 5;
+var d = 2;
 
 //renderer.gammaInput = true;
 //renderer.gammaOutput = true;
@@ -284,7 +284,7 @@ var offset = new THREE.Vector3();
 {
 	backgroundPlane();
 	createSubstrate({ pos: {y: 0.01} }); 	// подложка
-	startPosCamera3D({radious: 15, theta: 90, phi: 35});		// стартовое положение 3D камеры
+	startPosCamera3D({radious: 10, theta: 90, phi: 35});		// стартовое положение 3D камеры
 	addObjInCatalogUI_1();			// наполняем каталог объектов UI
 	addTextureInCatalogUI_1();		// наполняем каталог текстур UI
 	addTextureInCatalogUI_2();
@@ -1824,7 +1824,7 @@ $(document).ready(function ()
 	// /import/vm_furn_3.glb
 	// /import/80105983_krovat_dafna5.glb
 	
-	if(1==1)	// gltf/glb
+	if(1==2)	// gltf/glb
 	{
 		var loader = new THREE.GLTFLoader();
 		loader.load( infProject.path+'import/80105983_krovat_dafna9.glb', function ( obj ) 						
