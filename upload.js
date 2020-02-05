@@ -35,29 +35,17 @@ function fileSelected() {
     var oFile = document.getElementById('model_file').files[0];
 
     // get preview element
-    var oImage = document.getElementById('preview');
+    //var oImage = document.getElementById('preview');
+	
+	
+	
+	var reader = new FileReader();
+	reader.onload = function (e) 
+	{						
+		fname_s_input({data: e.target.result});		
+	}				
 
-    // prepare HTML5 FileReader
-    var oReader = new FileReader();
-        oReader.onload = function(e){
-
-        // e.target.result contains the DataURL which we will use as a source of the image
-        oImage.src = e.target.result;
-
-        oImage.onload = function () { // binding onload event
-
-            // we are going to display some custom image information here
-            sResultFileSize = bytesToSize(oFile.size);
-            document.getElementById('fileinfo').style.display = 'block';
-            document.getElementById('filename').innerHTML = 'Name: ' + oFile.name;
-            document.getElementById('filesize').innerHTML = 'Size: ' + sResultFileSize;
-            document.getElementById('filetype').innerHTML = 'Type: ' + oFile.type;
-            document.getElementById('filedim').innerHTML = 'Dimension: ' + oImage.naturalWidth + ' x ' + oImage.naturalHeight;
-        };
-    };
-
-    // read selected file as DataURL
-    oReader.readAsDataURL(oFile);
+	reader.readAsArrayBuffer(oFile);	
 }
 
 function startUploading() {

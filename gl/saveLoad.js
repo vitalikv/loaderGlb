@@ -753,7 +753,7 @@ function loadFilePL(arr)
 	
 	readyProject();
 	cameraZoomTop( camera.zoom );
-	
+	changeCamera(camera3D);
 
 	renderCamera();
 	

@@ -531,9 +531,9 @@ function setParamObj(cdm)
 	var obj = cdm.obj;
 	
 	var obj = obj.children[0];		
-	obj.position.y = 1;	
+	obj.position.y = 0.5;	
 
-	planeMath.position.y = 1; 
+	planeMath.position.y = 0.5; 
 	planeMath.rotation.set(-Math.PI/2, 0, 0);
 	planeMath.updateMatrixWorld(); 	
 	

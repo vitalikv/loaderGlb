@@ -284,7 +284,7 @@ var offset = new THREE.Vector3();
 {
 	backgroundPlane();
 	createSubstrate({ pos: {y: 0.01} }); 	// подложка
-	startPosCamera3D({radious: 10, theta: 90, phi: 35});		// стартовое положение 3D камеры
+	startPosCamera3D({radious: 5, theta: 90, phi: 65});		// стартовое положение 3D камеры
 	addObjInCatalogUI_1();			// наполняем каталог объектов UI
 	addTextureInCatalogUI_1();		// наполняем каталог текстур UI
 	addTextureInCatalogUI_2();
@@ -293,7 +293,8 @@ var offset = new THREE.Vector3();
 	//changeRightMenuUI_1({name: 'button_wrap_plan'});
 	startRightPlaneInput({});
 
-	//getAutoBuildingJson();	
+	//getAutoBuildingJson();
+changeCamera(camera3D);	
 }
 
 //----------- start
